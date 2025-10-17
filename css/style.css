@@ -7,9 +7,9 @@
 
 /* GLOBAL */
 body {
-    font-family: 'Arial', sans-serif; /* kasnije možeš promeniti font */
-    color: #333;
-    background-color: #fdfaf6; /* svetla neutralna pozadina */
+    font-family: 'Arial', sans-serif;
+    color: rgb(18, 18, 19); /* tamni tekst po logou */
+    background-color: rgb(251, 248, 244); /* svetla pozadina */
 }
 
 .container {
@@ -20,12 +20,11 @@ body {
 
 /* HEADER */
 header {
-    background-color: #ffffff; /* bela pozadina da logo iskače */
+    background-color: rgb(251, 248, 244); /* svetla kao pozadina */
     padding: 20px 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
 .logo {
@@ -35,17 +34,17 @@ header {
 nav a {
     margin-left: 20px;
     text-decoration: none;
-    color: #333; /* neutralna boja linkova */
+    color: rgb(18, 18, 19); /* tamni tekst */
     font-weight: 500;
 }
 
 nav a:hover {
-    color: #b71c1c; /* primer: tamno crvena za hover (možeš promeniti po logou) */
+    color: rgb(242, 186, 50); /* zlatna boja po logou */
 }
 
 /* HERO SECTION */
 .hero {
-    background-color: #fdecea; /* svetlo crvena nijansa, može se promeniti po logou */
+    background-color: rgb(251, 248, 244); /* svetla, možeš staviti nijansu ako želiš */
     padding: 100px 0;
     text-align: center;
 }
@@ -53,19 +52,19 @@ nav a:hover {
 .hero h1 {
     font-size: 2.5rem;
     margin-bottom: 20px;
-    color: #8b0000; /* tamnija nijansa za naslov */
+    color: rgb(18, 18, 19); /* tamno za kontrast */
 }
 
 .hero p {
     font-size: 1.2rem;
     margin-bottom: 30px;
-    color: #333;
+    color: rgb(18, 18, 19);
 }
 
 .btn-primary {
     padding: 12px 30px;
-    background-color: #d32f2f; /* glavna boja dugmeta (po logou) */
-    color: white;
+    background-color: rgb(242, 186, 50); /* zlatna */
+    color: rgb(18, 18, 19); /* tamni tekst na zlatnom dugmetu */
     text-decoration: none;
     border-radius: 6px;
     font-weight: bold;
@@ -73,20 +72,20 @@ nav a:hover {
 }
 
 .btn-primary:hover {
-    background-color: #8b0000; /* tamnija nijansa na hover */
+    background-color: rgb(218, 160, 40); /* tamnija nijansa zlatne za hover */
 }
 
 /* GALERIJA */
 .gallery {
     padding: 80px 0;
-    background-color: #ffffff; /* bela da slike budu u fokusu */
+    background-color: rgb(251, 248, 244); /* svetla */
     text-align: center;
 }
 
 .gallery h2 {
     font-size: 2rem;
     margin-bottom: 40px;
-    color: #333;
+    color: rgb(18, 18, 19);
 }
 
 .gallery-grid {
@@ -105,16 +104,16 @@ nav a:hover {
     transform: scale(1.05);
 }
 
-/* CONTACT / FOOTER */
+/* FOOTER */
 footer {
-    background-color: #8b0000; /* tamna boja iz loga */
-    color: #fff;
+    background-color: rgb(18, 18, 19); /* tamna boja */
+    color: rgb(242, 186, 50); /* zlatni tekst/linkovi */
     padding: 20px 0;
     text-align: center;
 }
 
 footer a {
-    color: #ffd700; /* zlatna boja (primer) */
+    color: rgb(242, 186, 50); /* zlatni linkovi */
     text-decoration: none;
     margin: 0 10px;
 }
