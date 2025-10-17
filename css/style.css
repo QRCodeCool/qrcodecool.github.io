@@ -7,11 +7,12 @@
 
 /* GLOBAL */
 body {
-    font-family: 'Arial', sans-serif;
-    color: rgb(18, 18, 19); /* tamni tekst po logou */
-    background-color: rgb(251, 248, 244); /* svetla pozadina */
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(18, 18, 19);
+    background-color: rgb(251, 248, 244);
 }
 
+/* KONTEJNER */
 .container {
     width: 90%;
     max-width: 1200px;
@@ -20,7 +21,7 @@ body {
 
 /* HEADER */
 header {
-    background-color: rgb(251, 248, 244); /* svetla kao pozadina */
+    background-color: rgb(18, 18, 19);
     padding: 20px 0;
     display: flex;
     align-items: center;
@@ -29,63 +30,85 @@ header {
 
 .logo {
     height: 60px;
+    margin-left: 20px;
 }
 
 nav a {
-    margin-left: 20px;
+    margin-right: 25px;
     text-decoration: none;
-    color: rgb(18, 18, 19); /* tamni tekst */
+    color: rgb(251, 248, 244);
     font-weight: 500;
 }
 
 nav a:hover {
-    color: rgb(242, 186, 50); /* zlatna boja po logou */
+    color: rgb(242, 186, 50);
 }
 
 /* HERO SECTION */
 .hero {
-    background-color: rgb(251, 248, 244); /* svetla, možeš staviti nijansu ako želiš */
-    padding: 100px 0;
+    background: linear-gradient(to bottom right, rgb(242, 186, 50), rgb(251, 248, 244));
+    color: rgb(18, 18, 19);
+    padding: 100px 20px;
     text-align: center;
 }
 
 .hero h1 {
-    font-size: 2.5rem;
+    font-size: 2.8rem;
     margin-bottom: 20px;
-    color: rgb(18, 18, 19); /* tamno za kontrast */
 }
 
 .hero p {
     font-size: 1.2rem;
     margin-bottom: 30px;
-    color: rgb(18, 18, 19);
 }
 
 .btn-primary {
     padding: 12px 30px;
-    background-color: rgb(242, 186, 50); /* zlatna */
-    color: rgb(18, 18, 19); /* tamni tekst na zlatnom dugmetu */
+    background-color: rgb(18, 18, 19);
+    color: rgb(242, 186, 50);
+    border-radius: 8px;
     text-decoration: none;
-    border-radius: 6px;
     font-weight: bold;
-    transition: background-color 0.3s ease;
+    transition: 0.3s;
 }
 
 .btn-primary:hover {
-    background-color: rgb(218, 160, 40); /* tamnija nijansa zlatne za hover */
+    background-color: rgb(242, 186, 50);
+    color: rgb(18, 18, 19);
+}
+
+/* ABOUT SECTION */
+.about {
+    background-color: rgb(245, 237, 225); /* topla bež nijansa koja se slaže sa zlatnom */
+    padding: 80px 0;
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 2rem;
+    color: rgb(18, 18, 19);
+    margin-bottom: 30px;
+}
+
+.about p {
+    max-width: 800px;
+    margin: auto;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: rgb(30, 30, 30);
 }
 
 /* GALERIJA */
 .gallery {
     padding: 80px 0;
-    background-color: rgb(251, 248, 244); /* svetla */
+    background-color: rgb(251, 248, 244);
     text-align: center;
 }
 
 .gallery h2 {
     font-size: 2rem;
-    margin-bottom: 40px;
     color: rgb(18, 18, 19);
+    margin-bottom: 40px;
 }
 
 .gallery-grid {
@@ -96,8 +119,9 @@ nav a:hover {
 
 .gallery-grid img {
     width: 100%;
-    border-radius: 10px;
+    border-radius: 12px;
     transition: transform 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
 }
 
 .gallery-grid img:hover {
@@ -106,14 +130,14 @@ nav a:hover {
 
 /* FOOTER */
 footer {
-    background-color: rgb(18, 18, 19); /* tamna boja */
-    color: rgb(242, 186, 50); /* zlatni tekst/linkovi */
-    padding: 20px 0;
+    background-color: rgb(18, 18, 19);
+    color: rgb(242, 186, 50);
+    padding: 30px 0;
     text-align: center;
 }
 
 footer a {
-    color: rgb(242, 186, 50); /* zlatni linkovi */
+    color: rgb(242, 186, 50);
     text-decoration: none;
     margin: 0 10px;
 }
