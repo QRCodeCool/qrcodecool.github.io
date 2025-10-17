@@ -1,236 +1,110 @@
-/* RESET */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+/* Osnovno podešavanje */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #fbf8f4;
+  color: #121213;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
-/* GLOBAL */
-body {
-    font-family: 'Montserrat', sans-serif;
-    color: rgb(18, 18, 19);
-    background-color: rgb(251, 248, 244);
-}
-
-/* KONTEJNER */
-.container {
-    width: 90%;
-    max-width: 1200px;
-    margin: auto;
-}
-
-/* HEADER */
+/* Header */
 header {
-    background-color: rgb(18, 18, 19);
-    padding: 20px 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  background-color: #121213;
+  color: #fbf8f4;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 40px;
+  box-shadow: 0 2px 6px rgba(18, 18, 19, 0.15);
 }
 
 .logo {
-    height: 60px;
-    margin-left: 20px;
+  height: 60px;
 }
 
 nav a {
-    margin-right: 25px;
-    text-decoration: none;
-    color: rgb(251, 248, 244);
-    font-weight: 500;
-}
-
-nav a:hover {
-    color: rgb(242, 186, 50);
-}
-
-/* HERO SECTION */
-.hero {
-    background: linear-gradient(to bottom right, rgb(242, 186, 50), rgb(251, 248, 244));
-    color: rgb(18, 18, 19);
-    padding: 100px 20px;
-    text-align: center;
-}
-
-.hero h1 {
-    font-size: 2.8rem;
-    margin-bottom: 20px;
-    position: relative;
-    display: inline-block;
-    padding: 10px 25px;
-    border: 3px solid rgb(242, 186, 50);
-    border-radius: 8px;
-    background-color: rgba(242, 186, 50, 0.1);
-    box-shadow: 0 0 10px rgba(242, 186, 50, 0.4);
-}
-
-.hero p {
-    font-size: 1.2rem;
-    margin-top: 25px;
-    color: rgb(18, 18, 19);
-}
-
-.btn-primary {
-    padding: 12px 30px;
-    background-color: rgb(18, 18, 19);
-    color: rgb(242, 186, 50);
-    border-radius: 8px;
-    text-decoration: none;
-    font-weight: bold;
-    transition: 0.3s;
-}
-
-.btn-primary:hover {
-    background-color: rgb(242, 186, 50);
-    color: rgb(18, 18, 19);
-}
-
-/* ABOUT SECTION */
-.about {
-    background-color: rgb(245, 237, 225);
-    padding: 80px 0;
-    text-align: center;
-}
-
-.section-title {
-    font-size: 2rem;
-    display: inline-block;
-    padding: 10px 20px;
-    border: 2px solid rgb(242, 186, 50);
-    background-color: rgba(242, 186, 50, 0.1);
-    color: rgb(18, 18, 19);
-    margin-bottom: 40px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(242, 186, 50, 0.4);
-}
-
-.about p {
-    max-width: 800px;
-    margin: auto;
-    font-size: 1.1rem;
-    line-height: 1.6;
-    color: rgb(30, 30, 30);
-}
-
-/* GALERIJA */
-.gallery {
-    padding: 80px 0;
-    background-color: rgb(251, 248, 244);
-    text-align: center;
-}
-
-.gallery .section-title {
-    margin-bottom: 40px;
-}
-
-.gallery-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
-}
-
-.gallery-grid img {
-    width: 100%;
-    border-radius: 12px;
-    transition: transform 0.3s ease;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-}
-
-.gallery-grid img:hover {
-    transform: scale(1.05);
-}
-
-/* FOOTER */
-footer {
-    background-color: rgb(18, 18, 19);
-    color: rgb(242, 186, 50);
-    padding: 30px 0;
-    text-align: center;
-}
-
-footer a {
-    color: rgb(242, 186, 50);
-    text-decoration: none;
-    margin: 0 10px;
-}
-
-footer a:hover {
-    text-decoration: underline;
-}
-
-/* Galerija */
-.gallery {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 20px;
-  margin: 30px auto;
-  max-width: 900px;
-}
-.gallery img {
-  width: 100%;
-  border-radius: 12px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
-  transition: transform 0.3s;
-}
-.gallery img:hover {
-  transform: scale(1.05);
-}
-
-/* Kontakt forma */
-.contact-form {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-  max-width: 500px;
-  margin: 40px auto;
-}
-.contact-form input, .contact-form textarea {
-  padding: 12px;
-  border: 2px solid #f2ba32;
-  border-radius: 10px;
-  font-size: 16px;
-}
-.contact-form button {
-  background-color: #f2ba32;
-  color: #121213;
-  border: none;
-  padding: 12px;
-  border-radius: 10px;
-  font-weight: bold;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
-.contact-form button:hover {
-  background-color: #e0a620;
-}
-.btn {
-  display: inline-block;
-  margin-top: 20px;
-  background-color: #f2ba32;
-  color: #121213;
-  padding: 10px 20px;
-  border-radius: 10px;
-  text-decoration: none;
-  font-weight: bold;
-  transition: background-color 0.3s;
-}
-.btn:hover {
-  background-color: #e0a620;
-}
-/* Navigacija */
-nav a {
-  color: #121213;
+  color: #fbf8f4;
   text-decoration: none;
   font-weight: 600;
   margin: 0 15px;
   padding: 8px 5px;
-  transition: color 0.3s, border-bottom 0.3s;
   border-bottom: 2px solid transparent;
+  transition: color 0.3s, border-bottom 0.3s;
 }
 
 nav a:hover {
-  color: #f2ba32; /* zlatna nijansa iz loga */
+  color: #f2ba32;
   border-bottom: 2px solid #f2ba32;
 }
 
+nav a.active {
+  color: #f2ba32;
+  border-bottom: 2px solid #f2ba32;
+}
 
+/* Hero sekcija */
+.hero {
+  text-align: center;
+  background: linear-gradient(rgba(18, 18, 19, 0.6), rgba(18, 18, 19, 0.6)),
+              url('../images/pozadina.jpg') center/cover no-repeat;
+  color: #fbf8f4;
+  padding: 120px 20px;
+  border-bottom: 5px solid #f2ba32;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 25px;
+}
+
+.btn {
+  background-color: #f2ba32;
+  color: #121213;
+  padding: 10px 25px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #e0a620;
+}
+
+/* Sekcija o nama */
+.about {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #fffdf9;
+}
+
+.about h2 {
+  color: #121213;
+  border-bottom: 3px solid #f2ba32;
+  display: inline-block;
+  padding-bottom: 5px;
+  margin-bottom: 20px;
+}
+
+/* Footer */
+main {
+  flex: 1;
+}
+
+footer {
+  background-color: #121213;
+  color: #fbf8f4;
+  text-align: center;
+  padding: 15px 0;
+  font-size: 14px;
+  margin-top: auto;
+}
