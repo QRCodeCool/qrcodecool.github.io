@@ -108,3 +108,57 @@ footer {
   font-size: 14px;
   margin-top: auto;
 }
+
+/* Kontakt forma */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 500px;
+  margin: 40px auto;
+}
+
+.contact-form input, 
+.contact-form textarea {
+  padding: 12px;
+  border: 2px solid #f2ba32;
+  border-radius: 10px;
+  font-size: 16px;
+}
+
+.contact-form textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.contact-form button {
+  background-color: #f2ba32;
+  color: #121213;
+  border: none;
+  padding: 12px;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.contact-form button:hover {
+  background-color: #e0a620;
+  transform: translateY(-2px);
+}
+
+/* Footer na dnu */
+html, body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+}
+
