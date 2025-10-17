@@ -1,0 +1,1 @@
+# qrcodecool.github.io
