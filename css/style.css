@@ -203,4 +203,34 @@ footer a:hover {
 .contact-form button:hover {
   background-color: #e0a620;
 }
+.btn {
+  display: inline-block;
+  margin-top: 20px;
+  background-color: #f2ba32;
+  color: #121213;
+  padding: 10px 20px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+.btn:hover {
+  background-color: #e0a620;
+}
+/* Navigacija */
+nav a {
+  color: #121213;
+  text-decoration: none;
+  font-weight: 600;
+  margin: 0 15px;
+  padding: 8px 5px;
+  transition: color 0.3s, border-bottom 0.3s;
+  border-bottom: 2px solid transparent;
+}
+
+nav a:hover {
+  color: #f2ba32; /* zlatna nijansa iz loga */
+  border-bottom: 2px solid #f2ba32;
+}
+
 
