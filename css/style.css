@@ -5,13 +5,13 @@
     box-sizing: border-box;
 }
 
+/* GLOBAL */
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Arial', sans-serif; /* kasnije možeš promeniti font */
     color: #333;
-    background-color: #fafafa;
+    background-color: #fdfaf6; /* svetla neutralna pozadina */
 }
 
-/* CONTAINER */
 .container {
     width: 90%;
     max-width: 1200px;
@@ -20,70 +20,73 @@ body {
 
 /* HEADER */
 header {
-    background-color: #fff;
+    background-color: #ffffff; /* bela pozadina da logo iskače */
     padding: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
-header .logo {
+.logo {
     height: 60px;
 }
 
-header nav {
-    float: right;
-}
-
-header nav a {
+nav a {
     margin-left: 20px;
     text-decoration: none;
-    color: #333;
+    color: #333; /* neutralna boja linkova */
     font-weight: 500;
 }
 
-header nav a:hover {
-    color: #00acc1;
+nav a:hover {
+    color: #b71c1c; /* primer: tamno crvena za hover (možeš promeniti po logou) */
 }
 
 /* HERO SECTION */
 .hero {
-    background-color: #e0f7fa;
-    padding: 120px 0;
+    background-color: #fdecea; /* svetlo crvena nijansa, može se promeniti po logou */
+    padding: 100px 0;
     text-align: center;
 }
 
 .hero h1 {
     font-size: 2.5rem;
     margin-bottom: 20px;
+    color: #8b0000; /* tamnija nijansa za naslov */
 }
 
 .hero p {
     font-size: 1.2rem;
     margin-bottom: 30px;
+    color: #333;
 }
 
 .btn-primary {
     padding: 12px 30px;
-    background-color: #00acc1;
+    background-color: #d32f2f; /* glavna boja dugmeta (po logou) */
     color: white;
     text-decoration: none;
     border-radius: 6px;
     font-weight: bold;
+    transition: background-color 0.3s ease;
 }
 
 .btn-primary:hover {
-    background-color: #00838f;
+    background-color: #8b0000; /* tamnija nijansa na hover */
 }
 
 /* GALERIJA */
 .gallery {
     padding: 80px 0;
-    background-color: #fff;
+    background-color: #ffffff; /* bela da slike budu u fokusu */
     text-align: center;
 }
 
 .gallery h2 {
     font-size: 2rem;
     margin-bottom: 40px;
+    color: #333;
 }
 
 .gallery-grid {
@@ -102,10 +105,20 @@ header nav a:hover {
     transform: scale(1.05);
 }
 
-/* FOOTER */
+/* CONTACT / FOOTER */
 footer {
-    background-color: #333;
+    background-color: #8b0000; /* tamna boja iz loga */
     color: #fff;
     padding: 20px 0;
     text-align: center;
+}
+
+footer a {
+    color: #ffd700; /* zlatna boja (primer) */
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer a:hover {
+    text-decoration: underline;
 }
